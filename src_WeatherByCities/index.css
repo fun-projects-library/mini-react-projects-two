@@ -1,0 +1,48 @@
+.city-overview {
+    display: inline-grid;
+    gap: 1em;
+    padding: 2em;
+    margin: 2em;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 5px 1px #7777;
+  }
+  
+  .city-overview h2 {
+    margin-top: 0;
+  }
+  
+  .city-overview .city-list {
+    background: #fff;
+    border-collapse: collapse;
+  }
+  
+  .city-overview .city-list td,
+  .city-overview .city-list th {
+    border: 1px solid #aaa;
+    padding: 0.5em 1em;
+  }
+  
+  .city-overview .add-city-form {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+  }
+  
+  .city-overview .input {
+    padding: 0.25em 0.5em;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    font: inherit;
+  }
+  
+  .city-overview .input:focus {
+    border-color: #17f;
+  }
+  
+  .city-overview button.input {
+    background-color: #17f;
+    border-color: #17f;
+    color: white;
+    cursor: pointer;
+  }
