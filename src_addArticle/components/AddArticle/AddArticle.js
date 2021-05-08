@@ -13,10 +13,11 @@ const AddArticle = () => {
     })
   }
 
-  const addNewArtical = (e) => {
+  const addNewArticle = (e) => {
     //e.preventDefault()
     console.log(article);
-    setArticles({type: "ADD_ARTICLE", article})
+    setArticles({type: "ADD_ARTICLE", article});
+    //saveArticle(article)
   }
 
   //console.log(article);
@@ -35,7 +36,7 @@ const AddArticle = () => {
         placeholder="Body"
         onChange={handleArticleData}
       />
-      <button onClick={addNewArtical} type="button">Add article</button>
+      <button onClick={addNewArticle} type="button">Add article</button>
     </form>
   );
 };
