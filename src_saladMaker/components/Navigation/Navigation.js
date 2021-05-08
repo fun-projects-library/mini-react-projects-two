@@ -11,7 +11,11 @@ const useStyles = createUseStyles({
 });
 
 export default function Navigation() {
+
+
   const classes = useStyles();
+
+
   const {user} = useContext(UserContext)
   return(
     <div className={classes.wrapper}>

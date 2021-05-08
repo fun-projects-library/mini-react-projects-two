@@ -19,7 +19,9 @@ function reducer(state, item) {
 
 export default function SaladMaker() {
   const classes = useStyles();
+
   const [salad, setSalad] = useReducer(reducer, []);
+  
   return(
     <SaladContext.Provider value={{salad, setSalad}}>
       <h1 className={classes.wrapper}>

@@ -15,21 +15,18 @@ function App() {
   let filteredArray;
   
   const emojiChange = (name) => {
-    console.log(userObject.favorites);
+    
 
     if(user.favorites.includes(name)){
+
       filteredArray = user.favorites.filter(element=> element!== name);
-      // console.log(filteredArray);
+      
       setUser({...user , favorites: filteredArray})
+
     } else {
-      //userObject.favorites.push(name);
-      console.log("eeeeee");
-      setUser({...user, favorites: [...user.favorites, name]})
+      setUser({...user, favorites: [...user.favorites, name]});
+
     }
-    
-    console.log(userObject.favorites);
-    // user.favorites = filteredArray
-    
   }
 
   return (

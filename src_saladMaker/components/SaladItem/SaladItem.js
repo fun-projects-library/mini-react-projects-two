@@ -31,7 +31,9 @@ const useStyles = createUseStyles({
 });
 
 export default function SaladItem({ image, name }) {
-  const {setSalad, salad} = useContext(SaladContext)
+
+
+  const {setSalad} = useContext(SaladContext)
   const {user, emojiChange} = useContext(UserContext);
   const classes = useStyles();
   const favorite = user.favorites.includes(name);
